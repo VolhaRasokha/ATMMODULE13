@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestMaiRuOperations]">
+  <listeners>
+    <listener class-name="com.epam.reportportal.testng.ReportPortalTestNGListener"/>
+  </listeners>
+  <test thread-count="5" name="TestMaiRuOperations(failed)">
+    <classes>
+      <class name="tests.MailCreationTest">
+        <methods>
+          <include name="mailRuLoginTest"/>
+          <include name="startBrowser"/>
+          <include name="stopBrowser"/>
+          <include name="mailRuMailCreationTest"/>
+        </methods>
+      </class> <!-- tests.MailCreationTest -->
+    </classes>
+  </test> <!-- TestMaiRuOperations(failed) -->
+</suite> <!-- Failed suite [TestMaiRuOperations] -->
